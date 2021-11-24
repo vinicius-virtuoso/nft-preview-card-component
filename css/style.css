@@ -42,7 +42,7 @@ main {
   max-width: 375px;
   padding: 1.5rem;
   background: #14253d;
-  border-radius: 20px;
+  border-radius: 15px;
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +52,7 @@ main {
   width: 100%;
   display: block;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -136,7 +136,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 .box-span-2 img {
@@ -180,7 +180,7 @@ p {
     padding: 1rem 0;
   }
   .box-span-2 {
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0.5rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

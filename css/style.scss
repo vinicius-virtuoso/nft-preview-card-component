@@ -46,14 +46,14 @@ main {
   max-width: 375px;
   padding: 1.5rem;
   background: $Very-dark-blue-card-BG;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   .box-img a {
     position: relative;
     width: 100%;
     display: block;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
   }
   .box-img a::after {
@@ -116,7 +116,7 @@ p {
   display: flex;
   align-items: center;
   font-size: $FontSize-paragraph;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 0.5rem 0;
 
   img {
     max-width: 35px;
@@ -154,6 +154,6 @@ p {
     padding: 1rem 0;
   }
   .box-span-2 {
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0.5rem 0;
   }
 }
