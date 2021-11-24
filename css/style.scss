@@ -35,6 +35,7 @@ main {
   height: 100vh;
   padding: 2%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: $Very-dark-blue-main-BG;
@@ -124,6 +125,18 @@ p {
   a:hover {
     color: $Cyan-normal;
   }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.3rem;
+  color: $Soft-blue;
+}
+.attribution a {
+  color: $White;
+}
+.attribution a:hover {
+  color: $Cyan-normal;
 }
 
 @media screen and (max-width: 780px) {
