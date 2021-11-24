@@ -1,7 +1,8 @@
 // ### Primary
 
 $Soft-blue: hsl(215, 51%, 70%);
-$Cyan: hsl(178, 100%, 50%);
+$Cyan: hsla(178, 100%, 50%, 0.5);
+$Cyan-normal: hsl(178, 100%, 50%);
 
 // ### Neutral
 
@@ -19,10 +20,121 @@ $FontFamily: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+a:hover {
+  color: $Cyan-normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 main {
   width: 100%;
   height: 100vh;
   padding: 2%;
-  // background: $Very-dark-blue-main-BG;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $Very-dark-blue-main-BG;
+  font-family: $FontFamily;
+}
+
+.card {
+  max-width: 375px;
+  padding: 1.5rem;
+  background: $Very-dark-blue-card-BG;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  .box-img a {
+    position: relative;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .box-img a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    background: $Cyan url("../images/icon-view.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    opacity: 0;
+  }
+  .box-img a:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+h1 {
+  font-size: 1.7rem;
+  padding: 1.5rem 0;
+
+  a {
+    color: $White;
+  }
+}
+p {
+  font-size: $FontSize-paragraph;
+  color: $Soft-blue;
+}
+.box-span {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid $Very-dark-blue-line;
+
+  span {
+    display: flex;
+    align-items: center;
+    color: $Cyan-normal;
+  }
+  span img {
+    margin-right: 0.5rem;
+  }
+  span:nth-child(2) {
+    color: $Soft-blue;
+  }
+}
+.box-span-2 {
+  display: flex;
+  align-items: center;
+  font-size: $FontSize-paragraph;
+  padding: 1.5rem 0 0 0;
+
+  img {
+    max-width: 35px;
+    margin-right: 0.5rem;
+    object-fit: contain;
+  }
+  a {
+    color: $White;
+  }
+  a:hover {
+    color: $Cyan-normal;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+  .box-span {
+    padding: 1rem 0;
+  }
+  .box-span-2 {
+    padding: 1rem 0 0 0;
+  }
 }
