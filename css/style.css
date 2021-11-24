@@ -69,7 +69,6 @@ main {
   background: rgba(0, 255, 247, 0.5) url("../images/icon-view.svg");
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   opacity: 0;
