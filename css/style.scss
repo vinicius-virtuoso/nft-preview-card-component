@@ -84,11 +84,13 @@ h1 {
 
   a {
     color: $White;
+    font-weight: 600;
   }
 }
 p {
   font-size: $FontSize-paragraph;
   color: $Soft-blue;
+  font-weight: 300;
 }
 .box-span {
   display: flex;
@@ -100,12 +102,14 @@ p {
     display: flex;
     align-items: center;
     color: $Cyan-normal;
+    font-weight: 600;
   }
   span img {
     margin-right: 0.5rem;
   }
   span:nth-child(2) {
     color: $Soft-blue;
+    font-weight: 500;
   }
 }
 .box-span-2 {
@@ -116,8 +120,10 @@ p {
 
   img {
     max-width: 35px;
-    margin-right: 0.5rem;
+    margin-right: 1.2rem;
     object-fit: contain;
+    border: 2px solid $White;
+    border-radius: 50%;
   }
   a {
     color: $White;

@@ -88,11 +88,13 @@ h1 {
 
 h1 a {
   color: white;
+  font-weight: 600;
 }
 
 p {
   font-size: 18px;
   color: #8bacda;
+  font-weight: 300;
 }
 
 .box-span {
@@ -114,6 +116,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   color: #00fff7;
+  font-weight: 600;
 }
 
 .box-span span img {
@@ -122,6 +125,7 @@ p {
 
 .box-span span:nth-child(2) {
   color: #8bacda;
+  font-weight: 500;
 }
 
 .box-span-2 {
@@ -137,9 +141,11 @@ p {
 
 .box-span-2 img {
   max-width: 35px;
-  margin-right: 0.5rem;
+  margin-right: 1.2rem;
   -o-object-fit: contain;
      object-fit: contain;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
 .box-span-2 a {
